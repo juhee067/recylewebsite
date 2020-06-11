@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+  body{font-family: 'Noto Sans KR', sans-serif;}
+  <style>
+    .wrap{width: 1366px; height:768px; }
+
+
+      #MenuBar {width:100%; height:109px; margin-bottom: 50px;}
+                     #MenuBarLogo {width:246px; height:109px; float:left; margin-left: 153px; }
+                     #MenuBarMenu {width:400px; height:109px; float:right; margin-right: 128px;}
+                                 #MenuBarAbout {width:109px; height:55px; float:left;  margin-right: 36px;  text-align: center; padding-top: 54px;}
+                                 #MenuBarMethod{width:109px; height:55px;  float:left; margin-right: 36px; text-align: center; padding-top: 54px;}
+                                 #MenuBarKinds{width:109px; height:55px;  float:left;text-align: center; padding-top: 50px; font-size: 1.3em; color:#506151;}
+                                 a { color: black; text-decoration: none;}
+                                 a:hover{font-size: 1.1em;}
+      aside {width:1300px; height:750px; float:left;}
+      .asideDis{width:800px; height:250px; margin-left:200px;}
+      .asideDis p:nth-child(1){font-size:50px; line-height: 25px;}
+      .asideDis p:nth-child(2){font-size:25px; line-height: 40px;}
+      .aboutBox{width:100px; height:28px; border:1px solid black; text-align:center; padding-top:5px;}
+      .asideImg{width:1000px; height:400px; margin-left:200px; margin-top:30px;  background:url(Pet.jpg);}
+
+      article{width:200px; height:568px;  float:right; margin-top:80px;}
+      li{list-style:none;  text-align: center;}
+
+      .clear{clear:both;}
+      .tab_content {position:absolute;top:50%;left:50%;transform:translate(320%,-45%);font-size:12px;}
+      .conbox {position:relative;}
+      .conbox span {display:inline-block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-weight:bolder;font-size:20px;}
+
+      input[type="radio"] {display:none;}
+      /*.conbox {width:300px;height:300px;background:#aaa;display:none; border: 1px solid black;}*/
+      .btn {padding:10px;text-align:center;}
+      label[for*="tab"] {width:5px;height:5px; display:block;padding:6px;background:white;cursor:pointer;margin:80px;border-radius:100%; border: 2px solid #476158;}
+
+      .con1 {background:url(Pet.jpg) center center no-repeat;}
+      .con2 {background:url(2.jpg) center center no-repeat;}
+      .con3 {background:url(3.jpg) center center no-repeat;}
+      .con4 {background:url(Pet.jpg) center center no-repeat;}
+      .con5 {background:url(2.jpg) center center no-repeat;}
+      .con6 {background:url(3.jpg) center center no-repeat;}
+      .con7 {background:url(3.jpg) center center no-repeat;}
+
+      input[id="tab01"]:checked ~ .con1 {display:block;}
+      input[id="tab02"]:checked ~ .con2 {display:block;}
+      input[id="tab03"]:checked ~ .con3 {display:block;}
+      input[id="tab04"]:checked ~ .con4 {display:block;}
+      input[id="tab05"]:checked ~ .con5 {display:block;}
+      input[id="tab06"]:checked ~ .con6 {display:block;}
+      input[id="tab07"]:checked ~ .con7 {display:block;}
+
+      input[id="tab01"]:checked ~ .btn > label[for="tab01"] {background:#476158;}
+      input[id="tab02"]:checked ~ .btn > label[for="tab02"] {background:#476158;}
+      input[id="tab03"]:checked ~ .btn > label[for="tab03"] {background:#476158;}
+      input[id="tab04"]:checked ~ .btn > label[for="tab04"] {background:#476158;}
+      input[id="tab05"]:checked ~ .btn > label[for="tab05"] {background:#476158;}
+      input[id="tab06"]:checked ~ .btn > label[for="tab06"] {background:#476158;}
+      input[id="tab07"]:checked ~ .btn > label[for="tab07"] {background:#476158;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+
+    <div id="MenuBar">
+
+        <div id="MenuBarLogo" >
+          <img src="logo.png" >
+
+        </div>
+      <div id="MenuBarMenu">
+           <div id="MenuBarAbout">
+        <a href="about.html">ABOUT</a>
+           </div>
+         <div id="MenuBarMethod">
+         METHOD
+           </div>
+         <div id="MenuBarKinds">
+          KINDS
+           </div>
+       </div>
+   </div>
+<aside>
+  <div class="asideDis">
+   <p>
+     PETE
+   </p>
+   <p>PET 는 생수병이나 탄산 / 이온 음료병 등에<br> 시중에 유통되는 플라스틱 음료수 병의 대부분을 차지한다.<br> 그 외에도 포장재나 식용유 용기 등으로 사용한다.</p>
+   <div class="aboutBox">
+<a href="about.html">ABOUT</a>
+     </div>
+
+
+    </div>
+    <div class="asideImg">
+
+      </div>
+
+
+</aside>
+<article>
+
+
+</article>
+<div class="tab_content">
+
+   <input type="radio" name="tabmenu" id="tab01" checked>
+   <input type="radio" name="tabmenu" id="tab02">
+   <input type="radio" name="tabmenu" id="tab03">
+   <input type="radio" name="tabmenu" id="tab04">
+   <input type="radio" name="tabmenu" id="tab05">
+   <input type="radio" name="tabmenu" id="tab06">
+   <input type="radio" name="tabmenu" id="tab07">
+
+   <div class="conbox con1"></div>
+   <div class="conbox con2"></div>
+   <div class="conbox con3"></div>
+   <div class="conbox con4"></div>
+   <div class="conbox con5"></div>
+   <div class="conbox con6"></div>
+   <div class="conbox con7"></div>
+
+   <div class="btn">
+      <label for="tab01"></label>
+      <label for="tab02"></label>
+      <label for="tab03"></label>
+      <label for="tab04"></label>
+      <label for="tab05"></label>
+      <label for="tab06"></label>
+      <label for="tab07"></label>
+   </div>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+
+</body>
+</html>
